@@ -1,6 +1,15 @@
 def Pattern_Programs(n):
-	for i in range(1,n+1):
-		print("*"*i)
+	star=1
+	osp=n-1
+	for i in range(1,n*2):
+		print(" "*osp+"*"*star)
+		if i<n:
+			star+=2
+			osp-=1
+		else:
+			star-=2
+			osp+=1
+
 
 
 if __name__ == '__main__':
