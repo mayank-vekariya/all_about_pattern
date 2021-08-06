@@ -1,4 +1,4 @@
-for i in range(32,36):
-    with open(f'star_patten/Hard/pattern_{i}.py', 'w') as f:
+for i in range(17,34):
+    with open(f'number_pattern/Medium/pattern_{i}.py', 'w') as f:
         data = 'def Pattern_Programs(n):\n\tfor i in range(1,n+1):\n\t\tprint("*"*i)\n\n\nif __name__ == \'__main__\':\n\tPattern_Programs(int(input()))'
         f.write(data)
