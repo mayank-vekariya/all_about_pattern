@@ -1,13 +1,15 @@
 def Pattern_Programs(n):
-	hh=n
-	osp=n-1
+	spoint=1
+	epoint=-1
 	for i in range(1,n+1):
-		print(" "*osp,end="")
-		for j in range(hh,n+1):
+		for j in range(spoint,n*2,2):
 			print(j,end=" ")
+		for k in range(epoint,0,-2):
+			print(k,end=" ")
 		print()
-		hh-=1
-		osp-=1
+		spoint+=2
+		epoint+=2
+
 
 if __name__ == '__main__':
 	Pattern_Programs(int(input()))
